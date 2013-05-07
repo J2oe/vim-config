@@ -1,4 +1,5 @@
 set encoding=utf-8
+set cursorline
 
 set number
 set ruler
@@ -20,6 +21,9 @@ set showmatch
 set matchtime=5
 set incsearch
 
+"Case sensitive searches
+set ignorecase
+
 set mouse=a
 set selection=exclusive
 set selectmode=mouse,key
@@ -32,3 +36,8 @@ set foldenable
 " zR to unfold everything
 " za to toggle the current fold
 " zA to recursively toggle the current fold
+
+" jump to the last positio when reopening a file
+if has("autocmd")
+    autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
