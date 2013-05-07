@@ -19,8 +19,8 @@ set expandtab
 
 set showmatch
 set matchtime=5
+set hlsearch
 set incsearch
-
 "Case sensitive searches
 set ignorecase
 
