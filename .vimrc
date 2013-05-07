@@ -1,3 +1,5 @@
+set encoding=utf-8
+
 set number
 set ruler
 syntax on
@@ -21,3 +23,12 @@ set incsearch
 set mouse=a
 set selection=exclusive
 set selectmode=mouse,key
+
+set foldmethond=indent
+set foldenable
+
+" :help fold
+" zM to fold everything
+" zR to unfold everything
+" za to toggle the current fold
+" zA to recursively toggle the current fold
