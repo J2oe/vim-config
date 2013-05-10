@@ -28,7 +28,7 @@ set mouse=a
 set selection=exclusive
 set selectmode=mouse,key
 
-set foldmethond=indent
+set foldmethod=indent
 set foldenable
 
 " :help fold
