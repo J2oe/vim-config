@@ -1,7 +1,7 @@
 set encoding=utf-8
 set cursorline
 
-set nocompatble
+set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
