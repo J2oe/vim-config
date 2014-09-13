@@ -4,33 +4,33 @@ set cursorline
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
+Plugin 'gmarik/vundle'
 
-Bundle 'Townk/vim-autoclose'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'majutsushi/tagbar'
-Bundle 'kien/ctrlp.vim'
-Bundle 'fisadev/vim-ctrlp-cmdpalette'
-Bundle 'mattn/zencoding-vim'
-Bundle 'kien/tabman.vim'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'fisadev/FixedTaskList.vim'
-Bundle 'tpope/vim-surround'
-Bundle 'michaeljsmith/vim-indent-object'
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'honza/vim-snippets'
-Bundle 'garbas/vim-snipmate'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'klen/python-mode'
-Bundle 'nvie/vim-flake8'
-Bundle 'AutoComplPop'
-Bundle 'IndexedSearch'
-Bundle 'matchit.zip'
-Bundlde 'YankRing.vim'
+Plugin 'Townk/vim-autoclose'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'majutsushi/tagbar'
+Plugin 'kien/ctrlp.vim'
+Plugin 'fisadev/vim-ctrlp-cmdpalette'
+Plugin 'mattn/emmet-vim'
+Plugin 'kien/tabman.vim'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'fisadev/FixedTaskList.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'michaeljsmith/vim-indent-object'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'honza/vim-snippets'
+Plugin 'garbas/vim-snipmate'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'klen/python-mode'
+Plugin 'nvie/vim-flake8'
+Plugin 'AutoComplPop'
+Plugin 'IndexedSearch'
+Plugin 'matchit.zip'
+call vundle#end()
 filetype plugin indent on
 
 set number
@@ -56,7 +56,7 @@ set matchtime=5
 set hlsearch
 set incsearch
 "Case sensitive searches
-" set ignorecase
+set ignorecase
 
 set mouse=a
 set selection=exclusive
